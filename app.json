@@ -1,0 +1,39 @@
+{
+  "expo": {
+    "name": "KasUMKM",
+    "slug": "kasumkm",
+    "scheme": "kasumkm",
+    "plugins": [
+      "expo-router",
+      [
+        "@react-native-community/datetimepicker",
+        {
+          "android": {
+            "compileSdkVersion": 35,
+            "targetSdkVersion": 35
+          }
+        }
+      ],
+      "expo-sharing"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.kasumkm.app",
+      "infoPlist": {
+        "ITSAppUsesNonExemptEncryption": false
+      }
+    },
+    "android": {
+      "package": "com.kasumkm.app"
+    },
+    "experiments": {
+      "typedRoutes": true
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "72ab90d7-3f6e-4034-ac5f-c082832b5755"
+      }
+    }
+  }
+}
