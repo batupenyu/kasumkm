@@ -7,7 +7,20 @@
       "android": {
         "buildType": "apk"
       },
+      "distribution": "internal",
       "env": {
+        "NODE_ENV": "production"
+      },
+      "node": "18.18.0",
+      "npm": {
+        "registry": "https://registry.npmjs.org/",
+        "fetchTimeout": 600000,
+        "retry": {
+          "retries": 5,
+          "factor": 2,
+          "minTimeout": 10000,
+          "maxTimeout": 60000
+        }
       }
     }
   }
